@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <header>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>HTML Course!</title>
   </header>
   <body>
     <img src="photo.jpg" alt="Anna" width="200">
+   
+    <div class="card bg-chocolate">
     <h1>Anna Terekhova</h1>
-    <p>Я начинащий <strong>программист</strong>. Люблю <em>жвотныхБ</em>. Они классные.</p> 
+    <p>Я начинащий <strong>программист</strong>. Люблю <em>жвотных</em>. Они классные.</p> 
+    </div>
+    
+    <div class="card bg-coral">
     <h4>Список социалбныъ сетей:</h4>
-    <a href="https://www.instagram.com/anna.terekhova452/" target="_blank">Instagram</a>
+      <a href="https://www.instagram.com/anna.terekhova452/" target="_blank">Instagram</a>
     |
-    <a href="https://vk.com/annaterekhova96" target="_blank">Vk</a>
+      <a href="https://vk.com/annaterekhova96" target="_blank">Vk</a>
     |
-    <a href="https://www.youtube.com/channel/UCQHl8MRtvla96A-vCEEB7gA" target="_blank">Youtube</a>
+     <a href="https://www.youtube.com/channel/UCQHl8MRtvla96A-vCEEB7gA" target="_blank">Youtube</a>
+    </div>
 
-    <h2>Связаться со мной</h2>
+    <div class="card bg-green">
+    <h2>Мое хобби</h2>
+    <ol class="hob">
+      <li>Прогулка</li>
+      <li>Игры</li>
+      <li>Музыка</li>
+    </ol>
+    </div>
 
-    <form action="\">
-      <div>
+    <form action="\" class="form">
+      <h3>Связаться со мной</h3>
+      <div class="form-row">
+      <div class="form-group">
         <label for="name">Ваше имя</label>
         <input type="text" id="name" placeholder="Введите имя">
       </div>
 
-      <div>
+      <div class="form-group">
         <label for="email">Ваш email</label>
         <input type="email" id="email" placeholder="Введите email">
       </div>
-
-      <div>
+      </div>
+      <div class="form-group">
         <label for="message">Ваше сообщение</label>
         <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
       </div>
 
-      <input type="submit" value="Отправить!">
+      <input class="btn" type="submit" value="Отправить!">
     </form>
   </body>
 </html>
